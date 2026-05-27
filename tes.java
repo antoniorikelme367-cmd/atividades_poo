@@ -1,9 +1,26 @@
+public class Person {
 
-class Carro {
+    private String name;
+
+    // Getter
+    public String getName() {
+        return name;
+    }
+
+    // Setter
+    public void setName(String newName) {
+        this.name = newName;
+    }
 }
-string marca;
-void acelerar ()
 
-void ligar ()
+class Main {
 
-void frea ()
+    public static void main(String[] args) {
+
+        Person myObj = new Person();
+
+        myObj.setName("Rikelme");
+
+        System.out.println(myObj.getName());
+    }
+}
